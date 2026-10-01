@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#08090c">
+<meta name="description" content="Stryke — оценивай стартапы, делай прогнозы и обсуждай проекты.">
+<title>Stryke</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Russo+One&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/data.js" defer></script>
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="bolt-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4ff8f"/><stop offset=".55" stop-color="#bff23b"/><stop offset="1" stop-color="#9ed11c"/></linearGradient>
+    <symbol id="bolt" viewBox="0 0 22 26"><path fill="url(#bolt-g)" d="M15.5 0 2 15h7.2L6.3 26 20 10.4h-7.4z"/></symbol>
+    <symbol id="i-feed" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 4h16v7H4zM4 15h7v5H4zM15 15h5v5h-5z"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 3h12v18l-6-4.5L6 21z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+
+<div class="app">
+  <aside class="side-l"><div>
+    <div class="logo"><svg><use href="#bolt"/></svg>STRYKE</div>
+    <nav class="snav" id="snav" aria-label="Разделы"></nav>
+    <p class="tagline">Оценивай стартапы.<br>Делись мнением.<br>Развивай инвестиционное мышление.</p>
+  </div></aside>
+
+  <main style="min-width:0">
+    <header class="top">
+      <div class="top-row">
+        <div class="logo"><svg><use href="#bolt"/></svg>STRYKE</div>
+        <span class="mode" id="mode"><b></b>Подключение…</span>
+      </div>
+      <div id="filters">
+        <div class="tabs" id="tabs" role="group" aria-label="Подразделы ленты"></div>
+        <div class="chips" id="sectors" role="group" aria-label="Отрасль"></div>
+        <div class="chips stage" id="stages" role="group" aria-label="Стадия"></div>
+      </div>
+      <div id="banner"></div>
+    </header>
+    <section id="view"></section>
+  </main>
+
+  <aside class="side-r"><div id="side-r"></div></aside>
+</div>
+
+<nav class="bnav" id="bnav" aria-label="Разделы"></nav>
+<div class="toast" id="toast" hidden></div>
+</body>
+</html>
